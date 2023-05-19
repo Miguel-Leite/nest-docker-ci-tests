@@ -1,73 +1,66 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Nest Docker CI Tests
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This repository contains a development environment base for the NestJS framework using Docker. It also includes continuous integration (CI) of automated tests.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+The goal of this project is to provide an initial out-of-the-box setup, allowing you to quickly start developing with NestJS in a Dockerized environment and run integration tests in an automated fashion.
 
-## Description
+# Requirements
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Before you start using this repository, make sure you have the following requirements installed on your local machine:
 
-## Installation
+- Git
+- Node.js
+- Docker
+- Docker compose
+
+# Settings
+
+Follow the steps below to set up and run the development environment:
+
+1 - Clone this repository on your local machine:
 
 ```bash
-$ yarn install
+git clone https://github.com/Miguel-Leite/nest-docker-ci-tests.git
 ```
 
-## Running the app
+2 - Navigate to the project's root directory::
 
 ```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
+cd nest-docker-ci-tests.git
 ```
 
-## Test
+3 - Run the ``` docker run -p80:3000 nest-docker-ci-tests ``` command to build and start Docker containers:
 
 ```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
+docker run -p80:3000 nest-docker
 ```
 
-## Support
+Access the application in the browser at http://localhost to verify that it is working correctly.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+# Contribution
 
-## Stay in touch
+If you want to contribute to this project, please follow these steps:
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+1 - Fork this repository.
 
-## License
+2 - Create a new branch with your contribution:
 
-Nest is [MIT licensed](LICENSE).
+```bash
+git checkout -b my-contribution
+```
+
+3 - Make the desired changes and commit them.
+
+4 - Push the changes to your repository fork:
+
+```bash
+git push origin my-contribution
+```
+
+5 - Open a Pull Request on this original repository.
+
+6 - Wait for your contribution to be reviewed and discussed.
+
+# License
+
+This project is licensed under the MIT license. See the LICENSE file for more information.
